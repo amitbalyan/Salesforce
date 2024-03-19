@@ -12,7 +12,7 @@ import com.salesforce.bean.Customer;
  * @author Dell
  *
  */
-public class CustomerService {
+public class CustomerService implements CustomerInterface {
 	
 	
 	// Services are methods which is using for logic impl.

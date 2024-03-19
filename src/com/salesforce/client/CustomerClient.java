@@ -3,6 +3,7 @@
  */
 package com.salesforce.client;
 
+import com.salesforce.service.CustomerInterface;
 import com.salesforce.service.CustomerService;
 
 /**
@@ -20,7 +21,9 @@ public class CustomerClient {
 		
 		// call all the Services in code here for lookup 
 		
-		CustomerService business=new CustomerService();
+//		CustomerService business=new CustomerService();
+		
+		CustomerInterface business=new CustomerService();		
 		business.createCustomer();
 		business.listCustomer();
 	//	System.out.println(business.deleteCustomer(101));
